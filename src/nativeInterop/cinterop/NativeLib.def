@@ -1,0 +1,3 @@
+headers = F:/CIA.data/Workspace/MVR/IntelliJ/KotlinCallDotNet/src/nativeInterop/cinterop/nativeLib.h
+headerFilter = F:/CIA.data/Workspace/MVR/IntelliJ/KotlinCallDotNet/src/nativeInterop/cinterop/*.h
+linkerOpts.mingw = -LF:/CIA.data/Workspace/MVR/IntelliJ/KotlinCallDotNet/src/nativeInterop/cinterop/ -lNativeLib
