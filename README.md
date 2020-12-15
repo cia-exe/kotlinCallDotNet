@@ -3,11 +3,13 @@ kotlin native call--> NativeLib.dll(c++) call--> NetFrameworkLibrary.dll(C# .net
 
 NativeLib.dll and NetFrameworkLibrary.dll are built by .\visualStudio\CppConsoleApp
 
-native lib link path is absolute and defined in *.def
+native lib compiler/link path is absolute and defined in *.def
 
 libcurl.a -> -lcurl
 NativeLib.lib-> -lNativeLib
 
+	info from stackoverflow:
+	
 	mingw also accepts libraries with a .lib extension.For instance, a library named libsample.lib must be linked as
 
 	-llibsample
@@ -21,13 +23,19 @@ NativeLib.lib-> -lNativeLib
 	To fully specify a library name use : prefix. For example -l:libxxxx.lib
 	On the contrary, when linking .lib files you would need to remove the lib prefix, e.g. -lssl would make the linker look for ssl.lib
 
-
-
 //------------------
 
 
-kotlin native 在windows 透過 mingw64 的 libcurl.dll 打 i18n API
 
+
+
+Toturial: https://kotlinlang.org/docs/tutorials/native/curl.html
+
+
+
+
+kotlin code base is from:
+https://github.com/JetBrains/kotlin-native/tree/master/samples/libcurl
 
 # Curl interop library
 
